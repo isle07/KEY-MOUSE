@@ -9,3 +9,4 @@ def func3():
 
 a = func3()
 print(a + "GG")
+print("Hello")
