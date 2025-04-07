@@ -1,2 +1,3 @@
 #귀여운 고양이가 짠!
-안녕하세요
+while True:
+    print("Nyang!!!!!!")
