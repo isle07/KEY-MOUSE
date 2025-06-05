@@ -35,6 +35,28 @@ class MoreFourCal(FourCal):
     def pow(self):
         result = self.first ** self.second
         return result
-#4의 23459759승 구하기↓
-asdf = MoreFourCal(4, 23459759)
+#4의 23459759승 구하기(였던것, 밑 코드가 실행안되서 어쩔수없이 지움)↓
+asdf = MoreFourCal(4, 2)
 print(asdf.pow())
+#4를 0으로 나누면 오류 발생, 아래 해결
+class SafeFourCal(FourCal):
+    def div(self):
+        if self.second == 0:
+            return 0
+        else:
+            return self.first / self.second
+ef = SafeFourCal(4, 0)
+print(ef.div())
+
+class Family:
+    lastname = "김"
+
+print(Family.lastname)
+
+qwer = Family()
+wert = Family()
+print(str(qwer.lastname) + ' ,' + str(wert.lastname))
+
+Family.lastname = '박'
+print(qwer.lastname + ' ,' + wert.lastname)
+#str 씌워도되고, 안씌워도됨
