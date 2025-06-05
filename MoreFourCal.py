@@ -35,5 +35,6 @@ class MoreFourCal(FourCal):
     def pow(self):
         result = self.first ** self.second
         return result
+#4의 23459759승 구하기↓
 asdf = MoreFourCal(4, 23459759)
 print(asdf.pow())
