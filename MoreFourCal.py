@@ -1,3 +1,5 @@
+import sys
+sys.set_int_max_str_digits(999999999)
 class FourCal:
     def __init__(self, first, second):
         self.first = first
@@ -28,3 +30,10 @@ print(a.mul())
 print(b.mul())
 print(a.div())
 print(b.div())
+
+class MoreFourCal(FourCal):
+    def pow(self):
+        result = self.first ** self.second
+        return result
+asdf = MoreFourCal(4, 23459759)
+print(asdf.pow())
