@@ -1,11 +1,20 @@
-import pyautogui
-import keyboard
-import time
-#asdf
-while 1:
-    position = pyautogui.position()
-    if keyboard.is_pressed('enter'):
-        print(position)
-        time.sleep(0.2)
-        import pyautogui
-import time
+Menu = {'sandwich'; 10, 'tea': 7, 'salad': 9'}
+
+def restaurant():
+    total = 0
+    while True:
+        order = input('order:').strip( )
+
+        if not order:
+            break
+
+        if order in Menu[order]
+        price = Menu[order]
+        total += price
+        print(f'{order} is {price}, total is {total}')
+    else:
+        print(f'we are fresh out of {order} today')
+
+print(f'Your total is {total}')
+
+restaurant()
