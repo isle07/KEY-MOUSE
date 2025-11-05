@@ -13,7 +13,7 @@ root.title("KEY-MOUSE")
 root.geometry("420x260")
 root.resizable(False, False)
 pad = {"padx": 8, "pady": 6}
-pyautogui.PAUSE = 0  # 클릭 사이에 pyautogui 내부 딜레이 제거
+pyautogui.PAUSE = 0
 
 # 스타일 (ttk로 약간 다듬음)
 style = ttk.Style(root)
