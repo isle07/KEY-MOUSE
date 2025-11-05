@@ -13,10 +13,12 @@ root.title("KEY-MOUSE")
 root.geometry("420x260")
 root.resizable(False, False)
 pad = {"padx": 8, "pady": 6}
+pyautogui.PAUSE = 0  # 클릭 사이에 pyautogui 내부 딜레이 제거
 
 # 스타일 (ttk로 약간 다듬음)
 style = ttk.Style(root)
 style.theme_use("default")
+
 
 # 변수
 repeat_var = StringVar(value="10")
@@ -62,7 +64,7 @@ def validate_positive_int(value, name):
         return None
 
 def capture_position(delay=3):
-    status_var.set(f"{delay}초 후 현재 마우스 위치 캡처 중...")
+    status_var.set(f"{delay}초 후 현재 마우스 위치를 캡쳐합니다...")
     root.update_idletasks()
     time.sleep(delay)
     x, y = pyautogui.position()
