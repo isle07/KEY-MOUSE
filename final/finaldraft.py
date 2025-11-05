@@ -1,4 +1,4 @@
-# ...existing code...
+#ESC를 눌러 비상 정지 가능
 from tkinter import *
 from tkinter import ttk, messagebox
 import pyautogui
@@ -9,11 +9,11 @@ pyautogui.FAILSAFE = True
 
 # 기본 설정
 root = Tk()
-root.title("KEY-MOUSE")
+root.title("KEY-MOUSE α-v0.01")
 root.geometry("420x260")
 root.resizable(False, False)
 pad = {"padx": 8, "pady": 6}
-pyautogui.PAUSE = 0
+pyautogui.PAUSE = 0 #cps가 의미가 없던 오류 해결
 
 # 스타일 (ttk로 약간 다듬음)
 style = ttk.Style(root)
@@ -140,4 +140,3 @@ capture_btn.grid(row=0, column=2, padx=6)
 root.bind("<Escape>", lambda e: stop_clicking())
 
 root.mainloop()
-# ...existing code...
