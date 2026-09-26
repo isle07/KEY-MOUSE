@@ -1,2 +1,5 @@
 3
 & C:/Users/Administrator/AppData/Local/Programs/Python/Python313/python.exe c:/Users/Administrator/Documents/GitHub/KEY-MOUSE/abandonedFourCal.py
+³É
+mathkdg
+mathkkkdg
